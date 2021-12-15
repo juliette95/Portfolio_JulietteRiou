@@ -1,0 +1,33 @@
+
+/*--- HOMEPAGE ---*/
+header {
+    @include header-banner;
+    @include header-logo;
+}
+
+    /* LARGE SCREEN - Homepage  */ 
+    @media all and (min-width: 1200px){
+        header{
+            height: 5%;
+            padding: 2%;
+        }
+        .logo{
+            font-size: 50em;
+        }
+    }
+
+/*--- MENU PAGE ---*/ 
+
+.header_menu{
+    @include menu_header;
+    @include header-banner;
+    
+    #logo{
+        @include header-logo;}
+
+    .fa-arrow-left{
+        margin: auto 10% auto 10%;
+        width: 90%; 
+        color: black;
+    }
+}

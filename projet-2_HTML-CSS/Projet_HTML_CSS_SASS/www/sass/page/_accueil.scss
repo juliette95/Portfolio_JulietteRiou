@@ -1,0 +1,396 @@
+/*---------- MOBILE-FIRST ----------*/ 
+body
+{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+    cursor: grab;  
+}   
+     
+.prev_restaurant_img /* for all img size of the page */ 
+{
+    width: 100%; 
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* form part - localization */ 
+.form
+{
+    width: 100%;
+    background-color: $color-form;
+    padding: 2% 0% 2% 0%;
+    box-shadow: 0 10px 10px -12px $color-footer inset;
+}
+.form div
+{
+    color: $color-footer; 
+    background-color: $color-form;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin: 0% auto 0% auto;
+    font-size: 1rem;
+    padding: 2%;
+    align-items: baseline;
+    & input{
+        background-color: $color-form;
+        color: $color-footer;
+        border: none;
+        margin-left: 5%;
+        font-size: 1rem;
+        padding: 2%;
+        outline: none; 
+    }
+}
+
+input[type=text]:focus { /* to cancel the automatic border box*/ 
+    border: 0px solid $color-form;
+  }
+
+/* introduction part */ 
+#introduction 
+{
+    background-color: $color-quaternary;
+    width: 100%;
+    text-align: center;
+    padding: 5% 0% 15% 0%; 
+    & h1{
+        width: 60%; 
+        margin: auto; 
+    }
+    & h4{
+        width: 70%;
+        margin-right: auto; 
+        margin-left: auto;
+    }
+}
+   /* How it works part */ 
+#how_it_works
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%; 
+    padding: 5% 0% 10% 0%;
+   & h1{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.step_1, .step_2, .step_3
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: auto;
+    background-color: $color-quaternary;
+    margin: 5% auto 0% auto;
+    padding: 2% 0% 2% 0%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px grey;
+    align-items: baseline;
+    justify-content: space-between;
+    p:nth-child(1){
+        order:1;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: white;
+        line-height: 1.5rem;
+        text-align: center;
+        font-size: 0.8em;
+        margin-left: -2%;
+        margin-right: 10%; 
+    }
+    i:nth-child(2){
+        order: 2; 
+        width: auto;
+        align-content: center;
+        margin: auto; 
+    }
+    h3:nth-child(3){
+        order:3;
+        width: 80%;
+        padding-left: 10%;
+    }
+}
+
+.step_1:hover, .step_2:hover, .step_3:hover /* step 1,2& 3 change of color (purple with opacity) with the hover */ {
+background-color: rgba(147, 86, 220, 0.1);
+cursor: pointer;  
+} 
+
+/* preview restaurants part */
+#prev_restaurants
+{
+    background-color: $color-quaternary;
+    width: 100%; 
+    padding: 10% 0% 20% 0%;
+    & h1{
+        width: 90%; 
+        margin: auto;
+    }
+}
+
+#prev_restaurants .prev_rest_1, .prev_rest_2, .prev_rest_3, .prev_rest_4
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+    border-radius: 20px;
+    margin-top: 5%;
+    box-shadow: 1px 1px 5px grey;
+    & a{
+        color:black;
+        text-decoration: none;
+    }
+    & a:hover{
+        color: black; 
+    }
+}
+   
+.new{ /* green box "nouveau" */ 
+    width: auto;
+    position: absolute;
+    right: 10%;
+    padding: 2%;
+    background-color: $color-tertiary;
+    color: $color-quinary;
+    border-radius: 5%;
+    font-size: 0.8rem;
+    z-index: 1; 
+}
+
+.prev_restaurant_img
+{
+    width: 100%; 
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.caption /* titles and heart icon */ 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 0% 5% 0% 5%;
+    line-height: 40%;
+    &_like{
+        display: flex; 
+        margin-top: auto; 
+        margin-bottom: auto;
+        font-size: 1.2rem; 
+        cursor: pointer;
+    } 
+}
+
+/*----------------Tablet-----------*/ 
+@media all and (min-width: 768px) and (max-width: 991px){
+
+    /* How it works part - change design --> row*/ 
+#how_it_works
+{
+    width: 95%;
+    margin: auto;
+    & h1 {
+        width: 100%; 
+    }
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+}
+
+.step_1, .step_2, .step_3{
+    width: 30%; 
+    & h3{
+        width: 60%;
+    }
+    
+}
+
+ /* preview restaurants part - change design --> 2/2 */
+#prev_restaurants 
+{
+    padding: 10% 0% 10% 0%; 
+    & .prev_rest_1, .prev_rest_2, .prev_rest_3, .prev_rest_4{
+        width: 40%;
+    }
+}
+.prev_rest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &_1 .new{
+
+        margin-right: 50%;
+        
+    }
+    &_2 .new{
+ 
+        margin-right: 0%;
+     
+    }
+}
+      
+}
+
+/*---------- LAPTOP ----------*/ 
+@media all and (min-width: 992px) and (max-width:1199px){
+
+    /* How it works part - change design --> row*/ 
+#how_it_works
+{
+    width: 95%;
+    margin: auto;
+    & h1 {
+        width: 100%; 
+    }
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+}
+
+.step_1, .step_2, .step_3{
+    width: 30%; 
+    & h3{
+        width: 60%; 
+    }
+}
+
+    /* preview restaurants part - change design --> 2/2 */ 
+#prev_restaurants 
+{
+    padding: 10% 0% 10% 0%; 
+    & .prev_rest_1, .prev_rest_2, .prev_rest_3, .prev_rest_4{
+        width: 40%;
+    }
+}
+.prev_rest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &_1 .new{
+
+        margin-right: 50%;
+        
+    }
+    &_2 .new{
+ 
+        margin-right: 0%;
+     
+    }
+}
+
+}
+
+/*------------ LARGE SCREEN -----------*/ 
+@media all and (min-width: 1200px){
+
+  /* Form part - change design --> takes place at the top right end of the page */  
+.form{
+    position: absolute; 
+    width:25%;
+    height: 8%;
+    border-radius: 20px;
+    margin: -5% 0% 10% 70%; 
+    padding: 0px; 
+    box-shadow: 1px 1px 10px $color-footer /*inset*/;
+    & div{
+        margin: auto; 
+        padding: 0px;
+        width: 90%;
+        height: 90%;
+        vertical-align: middle;
+        & i{
+            display: flex;
+            height: 100%;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        & input{
+            height: 85%;
+            width: 60%;
+            margin: auto;
+        }
+    }
+       
+   }
+   /* introduction */ 
+    #introduction{
+        height: 10%;
+        padding: 2% 0% 2% 0%; 
+        margin-top: 2%;
+    }
+
+    /* How it works part - change design --> row*/ 
+    #how_it_works
+    {
+        width: 95%;
+        height: 20%;
+        margin: auto;
+        & h1 {
+            width: 100%; 
+        }
+    }
+    
+    .steps{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .step_1, .step_2, .step_3{
+        width: 30%; 
+    }
+
+    /* preview restaurants part - change design --> 2/2 */ 
+    #prev_restaurants {
+    padding: 5% 0% 5% 0%; 
+    & .prev_rest_1, .prev_rest_2, .prev_rest_3, .prev_rest_4{
+        width: 40%;
+    }
+}
+
+.prev_rest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; 
+    &_1 .new{
+
+        margin-right: 45%;
+        padding: 1%;
+        
+    }
+    &_2 .new{
+ 
+        margin-right: 5%;
+        padding: 1%;
+     
+    }
+}
+
+}

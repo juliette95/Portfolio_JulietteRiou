@@ -1,0 +1,147 @@
+/*--- HOMEPAGE ---*/
+
+/* loader */ 
+
+    @keyframes background-loader {
+        from{
+            opacity: 1;  
+            position: fixed; 
+            z-index: 2; 
+        }
+        to{
+            opacity: 0; 
+            z-index: 1;   
+        }
+    }
+
+    @keyframes spin {
+        from{
+            transform: rotate(0deg);
+            opacity: 1; 
+            z-index: 3; 
+        }
+        to{
+            transform: rotate(360deg);
+            opacity: 0;
+            z-index: 1; 
+        }
+    }
+
+/* heart animation */ 
+
+    @keyframes heart {
+	    from{
+		    background: linear-gradient( white 60%, $color-primary 10%);
+		    -webkit-background-clip: text;
+		    animation-delay: 1000ms;
+	    }
+	    10% {
+		    background: linear-gradient(white 50%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1100ms;
+	    }
+	    20% {
+		    background: linear-gradient(white 40%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1200ms;
+	    }
+	    30% {
+		    background: linear-gradient(white 30%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1300ms;
+	    }
+	    40% {
+		    background: linear-gradient(white 20%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1400ms;
+	    }
+	    50% {
+		    background: linear-gradient(white 10%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1500ms;	
+	    }
+	    60% {
+		    background: linear-gradient(white 8%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1600ms;
+	    }
+	    70% {
+		    background: linear-gradient(white 5%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1700ms;
+	    }
+	    80% {
+		    background: linear-gradient(white 2%, $color-primary 10%, $color-secondary);
+		    -webkit-background-clip: text;
+		    animation-delay: 1800ms;
+	    }
+	    90% {
+		    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+		    -webkit-background-clip: text;
+            animation-delay: 1900ms;
+	    }
+	    to{
+		    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+		    -webkit-background-clip: text;
+            animation-delay: 2000ms;		
+	    }
+    }
+
+/*--- MENU PAGE ---*/ 
+
+/* suggestion dishes loading*/ 
+
+    @keyframes suggestion-loading{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+/* suggestion price - icon check */ 
+
+    /* 1st keyframes - spin icon */ 
+        @keyframes spin_icon{
+            0%{
+                transform: translateX(5%)  rotate(0deg); 
+                animation-direction: reverse;
+                opacity: 0;
+            }
+            5%{
+                opacity: 1; 
+            }
+            100%{
+                transform: translateX(-20%)  rotate(360deg); 
+            }
+        }
+
+    /* 2nd keyframes - green background appears */ 
+
+        @keyframes moving_title{
+            0%{
+                width: 100%; 
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px; 
+            }
+            50%{
+                width: 70%;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px; 
+            }
+            100%{
+                width: 70%;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px; 
+            }
+        }
+
+
+
+
+
+
+
+
+

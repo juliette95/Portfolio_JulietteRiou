@@ -1,0 +1,345 @@
+/*.chargement{
+
+border: 10px solid white;
+border-top-bottom: 10px solid #9356DC;
+border-bottom: 10px solid #eaeaea;
+border-radius: 50%;
+width: 100px; 
+height: 100px;
+margin: auto;
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+animation: spin 1.5s linear infinite;
+}
+
+/*animation loader*/ 
+
+/*@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}*/
+
+/*.full {
+	
+	
+   -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black; 
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    background: white; 
+    transition: opacity 4s;
+  
+
+}
+
+ .full:hover{
+    	background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    	opacity: 0.2;
+        /*background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1.13);*/
+
+        /*transition-duration: 1s; */ 
+		/*transition-timing-function: ease-in;*/
+    
+/*}*/ 
+
+
+.carre{
+  width: 50px;
+	color: red;
+	border: 5px solid blue;
+	background: pink;
+	transition: background 5s;
+	
+}
+.carre:hover{
+	background: green; 
+	/*transition-duration: 2s; 
+	transition-timing-function: ease-in; */ 
+
+}
+
+/*.full_1{
+	position:relative;
+	background-image: linear-gradient(to bottom, #9356DC, #FF79DA); 
+	z-index:-1;
+}*/ 
+
+
+/*.empty_1 {
+	background: white;
+	
+	/*transition: background 5s;*/ 
+	
+/*}*/ 
+
+
+	/*-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black; */ 
+i{
+	display: bloc; 
+}	
+
+/*.full_1{
+	color: white;
+	background: white; 
+	width: 2%;
+	height: 2%;
+	right: 97%;
+	position: absolute;
+	z-index: 8;
+	top: 50;
+	transition: opacity 1s;
+
+
+}
+.full_1:hover{
+	opacity: 0.1;
+}
+*/ 
+
+/*.full_2{
+	background: transparent; 
+	color: white;
+	height: 15px;
+	width: 15px;
+	right: 97%;
+	z-index: 4;
+	position: absolute;
+	/*-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;*/ 
+    /*-webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid white; 
+}
+*/ 
+
+/*.full_3{
+	background: transparent; 
+	color: transparent;
+	height: 8px;
+	width: 8px;
+	right: 98%;
+	z-index: 2;
+	position: absolute;
+	/*-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;*/ 
+    /*-webkit-text-stroke: 1px white;*/ 
+    /*-webkit-text-fill-color: transparent;
+    border: 2px solid white;
+}*/ 
+
+
+
+
+
+
+
+
+    
+
+    	
+
+    
+	/*background-clip: text;
+	-webkit-background-clip: text;
+   /* -webkit-text-fill-color: transparent;*/ 
+
+   /*.bloc-couleur{
+   /*	width: 150px;
+   	height: 150px;
+   	border: 1px solid grey;*/ 
+   /*	position: relative;
+   	/*display:inline-block;*/
+  /* 	overflow: hidden;
+   	
+   	
+   /*	color: transparent;
+   	background: transparent;*/ 
+   /*}*/ 
+
+  /*.couleur-remplissage:after{
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  transition :  3s ease-in-out;
+
+
+  /*transition-property : top, bottom, left,right, border-width;*/
+  
+  
+  
+   
+  /*background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+/*}*/ 
+
+/*.to-top:after{
+  top:100%;
+  }
+
+ .to-top:hover:after{
+  top:0%;
+
+  }*/ 
+
+
+/*.empty_3{
+	right: 97%;
+	position: absolute;
+	z-index: 16;
+	transition: opacity 2s;
+	background: white;
+}
+
+.empty_3:hover{
+	opacity: 0;
+}*/ 
+
+
+  /*.empty_3{
+  	color: red;
+  	background: transparent;
+  	right: 80%;
+  	opacity: 0.5;
+  	position: absolute; 
+  	z-index: 8;
+  }*/ 
+
+.full_1{
+	/* color: white;
+	background: white; 
+	right: 96.8%;
+	position: absolute;
+	z-index: 8;
+	top: 50;
+	transition: opacity 2s;
+	background-clip: text;
+	-webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;*/ 
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    
+   
+
+}
+.full_1:hover{
+	animation: heart 5s linear;
+	/*background: linear-gradient(to bottom, #9356DC, #FF79DA);
+	-webkit-text-fill-color: transparent;*/
+	animation-fill-mode: backwards;
+	/*-webkit-text-fill-color: linear-gradient(to bottom, #9356DC, #FF79DA);*/ 
+    -webkit-text-stroke: 0px black;
+
+
+	/*background: linear-gradient(to bottom, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/ 
+       
+}
+
+@keyframes heart {
+	from{
+		background: linear-gradient( white 60%, #9356DC 10%, );
+		-webkit-background-clip: text;
+		animation-delay: 1000ms;
+		
+	}
+	10% {
+		background: linear-gradient( white 50%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1100ms;
+		
+
+	}
+	20% {
+		background: linear-gradient( white 40%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1200ms;
+		
+
+	}
+	30% {
+		background: linear-gradient( white 30%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1300ms;
+		
+
+	}
+	40% {
+		background: linear-gradient( white 20%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1400ms;
+		
+	}
+	50% {
+		background: linear-gradient( white 10%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1500ms;
+		
+	}
+
+	60% {
+		background: linear-gradient ( white 8%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1600ms;
+		
+
+	}
+	70% {
+		background: linear-gradient (white 5%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1700ms;
+		
+
+	}
+	80% {
+		background: linear-gradient(white 2%, #9356DC 10%, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1800ms;
+		
+
+	}
+	90% {
+		background: linear-gradient(to bottom, #9356DC, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 1900ms;
+		
+	}
+
+	to{
+		background: linear-gradient(to bottom, #9356DC, #FF79DA);
+		-webkit-background-clip: text;
+		animation-delay: 2000ms;
+			
+	}
+}
+
+/*.full_2{ /* coeur calque 2 - coeur noir fond transparent*/ 
+	/*color: rgb(255, 255, 255,0 );*/
+	/*color: rgb(255, 255, 255,0 );
+	background: white;*/
+	/*right: 96.8%;
+	position: absolute;
+	z-index: 4;
+	top: 50;
+
+	transition: opacity 2s;
+	-webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: transparent;
+}

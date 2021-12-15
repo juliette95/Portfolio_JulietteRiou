@@ -1,0 +1,32 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-quaternary: #f6f6f6;
+$color-quinary: #008766;
+$color-form: #eaeaea;
+$color-footer: #353535;
+$color-heart_gradient: linear-gradient(to bottom, #9356DC, $color-secondary);
+
+
+
+$font-size: 1.2rem 1rem 0.8rem 0.6rem;
+
+h1
+{
+    font-size: nth($font-size,1)
+}
+
+h2
+{
+    font-size: nth($font-size,2);
+}
+
+h3{
+    font-size: nth($font-size,3);
+}
+
+h4
+{
+    font-size: nth($font-size,4);
+    font-weight: bold;
+}

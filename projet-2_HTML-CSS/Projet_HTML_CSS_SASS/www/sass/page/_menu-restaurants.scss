@@ -1,0 +1,182 @@
+/*---------- MOBILE-FIRST ----------*/ 
+    body
+    {
+       @include menu_body;
+       cursor: grab;
+    } 
+
+/* Main */ 
+    /* img - background */ 
+    .img-background_palette{
+        background-image: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        @include menu_background; 
+        z-index: -1; 
+        position: sticky;  
+    }
+
+    .img-background_enchantee{
+        background-image: url("../../public/img/stil-u2Lp8tXIcjw-unsplash.jpg");
+        @include menu_background;
+        z-index: -1; 
+        position: sticky; 
+    }
+
+    .img-background_française{
+        background-image: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        @include menu_background;
+        z-index: -1; 
+        position: sticky; 
+    }
+
+    .img-background_delice{
+        background-image: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        @include menu_background;
+        z-index: -1; 
+        position: sticky; 
+    }
+
+    /* Menu */ 
+    #menu
+    {
+       background-color: $color-quaternary;
+        border-top-left-radius: 2em; 
+        border-top-right-radius: 2em;
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: -5%; 
+    }
+
+    .header_section
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%; 
+        margin: auto;
+        align-items: baseline; 
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+
+    .category_menu{
+        width: 90%; 
+        margin: 0% auto 8% auto;
+        padding-bottom: 1%;
+     &-title{
+        border-bottom: 2px solid $color-tertiary; 
+        padding-bottom: 1%;
+        width: 8%;
+     } 
+    }
+
+    .suggestion{
+        border-radius: 1em; 
+        box-shadow: 4px 4px 6px $color-form;
+        background-color: $color-tertiary; 
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        margin: 0% auto 5% auto;
+        & i{
+            display: none; 
+            font-size: 1.2em;
+        }
+    }
+
+    .all_title-price {
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-radius: 1em; 
+        background-color: white;
+        padding: 5%; 
+        width: 100%; }
+
+       .suggestion_title{
+            width: 70%;
+            height: 100%; 
+            padding: 0px;  
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;  
+            h3{
+                line-height: 1.2em;
+                margin: 0% auto 0% auto;
+                width: 100%; 
+            }
+            h4{
+                height: auto;
+                line-height: 1.2em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0% auto 0% auto;
+                width: 100%;  
+            }
+        }
+        .suggestion_price{ /*price*/ 
+           display: flex; 
+           flex-direction: column; 
+           flex-wrap: nowrap;
+           justify-content: flex-end;  
+            p{
+                margin: 0px; 
+            }
+        }
+    
+   /*----------------Tablet-----------*/ 
+@media all and (min-width: 768px) and (max-width: 991px){
+
+#menu{
+    margin-top: -2%;  
+}
+
+.category_menu{ /* category menu - change suggestion size */ 
+    width: 60%; 
+}
+
+}
+
+/*---------- LAPTOP ----------*/ 
+@media all and (min-width: 992px) and (max-width:1199px){
+
+#menu{
+    margin-top: -1%;  
+}
+
+.category_menu{ /* category menu - change suggestion size */ 
+    width: 60%; 
+}
+
+}
+
+/*------------ LARGE SCREEN -----------*/ 
+@media all and (min-width: 1200px){
+
+    /*img background - change size*/ 
+.img-background_palette{
+    height: 40em;
+}
+
+.img-background_enchantee{
+    height: 40em;
+}
+
+.img-background_française{
+    height: 40em;
+}
+
+.img-background_delice{
+    height: 40em;
+}
+
+    /* category menu - change suggestion size */ 
+.category_menu{
+    width: 60%; 
+}
+
+}
+

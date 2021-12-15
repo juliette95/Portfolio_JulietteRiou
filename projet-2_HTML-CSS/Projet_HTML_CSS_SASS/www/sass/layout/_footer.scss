@@ -1,0 +1,43 @@
+
+/* MOBILE FIRST */ 
+footer{
+    @include footer-banner;
+}
+
+.footer_title {
+    @include footer-banner-title;
+    & i{
+        @include footer-banner-title-icon;
+    } 
+}
+
+.mail:link {
+    @include footer-banner-mailto;
+}
+
+/* LARGE SCREEN - change footer design --> row */ 
+@media all and (min-width: 1200px){
+
+ footer{ 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#footer_info{
+    @include footer-laptop-subsection-row; 
+    justify-content: space-between;
+}
+
+.footer_info-part1, .footer_info-part2{
+    @include footer-laptop-subsection-row; 
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer_title{
+    @include footer-laptop-subsection-row; 
+    justify-content: center;
+    margin: auto; 
+}
+}
